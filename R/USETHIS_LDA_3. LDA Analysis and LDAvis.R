@@ -66,7 +66,7 @@ json = createJSON(phi = phi,
                   term.frequency = term.freq)
 serVis(json)
 
-serVis(json, out.dir = '/Users/yhn_hac/Hanyang University/01-2. Study_Alone/R Data Analysis/LDA/Results_LDAvis/20210109/vis_n1321_k34_R02s', open.browser = FALSE)
+serVis(json, out.dir = '/Users/yhn_hac/Hanyang University/01-2. Study_Alone/R Data Analysis/LDA/Results_LDAvis/20210109/vis_n1321_k34_R01s', open.browser = FALSE)
 
 
 #serVis(json, out.dir = 'vis', open.browser = FALSE)
