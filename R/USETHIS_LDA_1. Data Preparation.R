@@ -26,7 +26,7 @@ library(ldatuning)
 # Choose
 #dataset_original = read.csv(file.choose(), stringsAsFactors = FALSE) 
 # CSV
-dataset_original = read.csv('/Users/yhn_hac/Library/Mobile Documents/com~apple~CloudDocs/1. R Projects/LDA_ItsOK/Data/USETHIS_scopus_INT_n1321_20210108.csv', stringsAsFactors = FALSE)
+dataset_original = read.csv('/Users/yhn_hac/Hanyang University/01-2. Study_Alone/R Data Analysis/LDA/Data/USETHIS_scopus_INT_n1321_20210108.csv', stringsAsFactors = FALSE)
 # Excel
 # library(readxl)
 # dataset_original <- read_excel("/Users/yhn_hac/Hanyang University/01-2. Study_Alone/R Data Analysis/LDA (Latent Dirichlet Allocation)/LDA_vis/data/USETHIS_scopus_INT_n1326_20201231_R01.xlsx")

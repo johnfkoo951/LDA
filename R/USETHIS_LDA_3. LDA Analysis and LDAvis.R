@@ -66,9 +66,8 @@ json = createJSON(phi = phi,
                   term.frequency = term.freq)
 serVis(json)
 
-serVis(json, out.dir = '//Users/yhn_hac/Library/Mobile Documents/com~apple~CloudDocs/1. R Projects/LDA_ItsOK/Results_LDAvis/20210109/vis_n1321_k34_R01s', open.browser = FALSE)
+serVis(json, out.dir = '/Users/yhn_hac/Library/Mobile Documents/com~apple~CloudDocs/1. R Projects/LDA_ItsOK/Results_LDAvis/20210109/vis_n1321_k34_R01s', open.browser = FALSE)
 
-serVis(json, out.dir = '/Users/yhn_hac/Library/Mobile Documents/com~apple~CloudDocs/1. R Projects/LDA_vis/Results_LDAvis/jan8_n1321_k34_R07s', open.browser = FALSE)
 
 #serVis(json, out.dir = 'vis', open.browser = FALSE)
 #serVis(json, out.dir='LDAvis_20201229_k33_a1.5', open.browser=FALSE)
