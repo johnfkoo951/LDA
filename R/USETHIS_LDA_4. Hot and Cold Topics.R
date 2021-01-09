@@ -129,3 +129,17 @@ print(xyplot(
 ))
 
 #theta_mean_lm_coef_sign
+
+
+install.packages("xlsx")
+library(xlsx)
+
+### Make Excel Sheets
+
+### Sheet 1 ###
+write.xlsx(theta_mean_by_year,"/Users/yhn_hac/Hanyang University/01-2. Study_Alone/R Data Analysis/LDA/Results_Exported Data/hot_cold_theta_n1321_k34_20210109.xlsx", sheetName = "theta_mean_by_year",
+           col.name = TRUE, row.names = TRUE, append = FALSE)
+
+### Sheet 2 ###
+write.xlsx(theta_mean_lm_coef,"/Users/yhn_hac/Hanyang University/01-2. Study_Alone/R Data Analysis/LDA/Results_Exported Data/hot_cold_theta_n1321_k34_20210109.xlsx", sheetName = "theta_mean_lm_coef",
+           col.name = TRUE, row.names = TRUE, append = TRUE)
