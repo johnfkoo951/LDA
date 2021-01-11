@@ -143,3 +143,39 @@ write.xlsx(theta_mean_by_year,"/Users/yhn_hac/Hanyang University/01-2. Study_Alo
 ### Sheet 2 ###
 write.xlsx(theta_mean_lm_coef,"/Users/yhn_hac/Hanyang University/01-2. Study_Alone/R Data Analysis/LDA/Results_Exported Data/hot_cold_theta_n1321_k34_20210109.xlsx", sheetName = "theta_mean_lm_coef",
            col.name = TRUE, row.names = TRUE, append = TRUE)
+
+d <- theta_mean_by_year
+ddf <- data.frame(d)
+ddf_t <- data.frame(t(ddf))
+# ddf_t <- data.frame(ddf_t[,"Topic Number"] <- c(1:34))
+
+
+
+
+######## Unfinished ############################################################################
+
+library(readr)
+library(dplyr)
+# ddf_t <- ddf_t %>% mutate(topic_name = 1:34)
+# ddf_t2 <- reshape(ddf_t,
+#                   direction = "long",
+#                   varying = list(names(ddf_t)[1:34]),
+#                   v.names = "mean_theta",
+#                   idvar = c("topic_name"),
+#                   timevar = "Year",
+#                   times = 1983:2020)                 
+
+
+
+ddf <- ddf %>% mutate(year = 1994:2020)
+
+
+library(data.table)                 
+ddf_long <- melt(data = ddf,
+                 id.vars = c("year"),
+                 variable.name = "Topic_name",
+                 value.name = "mean_theta")
+write.xlsx(ddf_long,"/Users/yhn_hac/Hanyang University/01-2. Study_Alone/R Data Analysis/LDA/Results_Exported Data/hot_cold_theta_n1321_k34_20210109.xlsx", sheetName = "new",
+           col.name = TRUE, row.names = TRUE, append = TRUE)
+
+
