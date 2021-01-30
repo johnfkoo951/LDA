@@ -1,7 +1,7 @@
 library(ldatuning)
 
 ### Optimal N of Topics with LDAtuning ###
-G <- 10000   # Default value of Iteration = 2000
+G <- 100000   # Default value of Iteration = 2000
 alpha <- 1.5
 
 
@@ -17,7 +17,7 @@ result <- FindTopicsNumber(dtm,topics = seq(from = 2, to = 100, by = 1),
 result
 
 #write.csv(result,file="LDAtuning_result.csv")
-write.csv(result,file="LDAtuning_result_20201231_a1.5_G10k.csv")
+write.csv(result,file="LDAtuning_result_20210111_a1.5_G100k.csv")
 FindTopicsNumber_plot(result)
 
 
