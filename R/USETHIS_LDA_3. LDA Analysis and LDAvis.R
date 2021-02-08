@@ -2,7 +2,7 @@ library(topicmodels)  # for LDA topic modelling
 
 ### Main Analysis: LDA Analysis with Gibbs Sampling ###
 
-K = 34
+K = 32
 G <- 10000   # Default value of Iteration = 2000
 alpha <- 1.5
 
@@ -41,7 +41,7 @@ m = LDA(dtm, method = "Gibbs", k = K,  control = list(alpha=alpha,
 
 ### Model Save
 
-m_n1857_k34_R01s <- m
+m_n3340_k32_R07s <- m
 # m <- m_n1321_k34_R03s
 
 
@@ -72,7 +72,7 @@ json = createJSON(phi = phi,
                   term.frequency = term.freq)
 serVis(json)
 
-serVis(json, out.dir = '/Users/yhn_hac/Hanyang University/01-2. Study_Alone/R Data Analysis/LDA/Results_LDAvis/20210130/vis_n1857_k34_R01s', open.browser = FALSE)
+serVis(json, out.dir = '/Users/yhn_hac/Hanyang University/01-2. Study_Alone/R Data Analysis/LDA/Results_LDAvis/20210130/vis_n3340_k32_R07s', open.browser = FALSE)
 
 
 #serVis(json, out.dir = 'vis', open.browser = FALSE)

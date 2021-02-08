@@ -17,7 +17,7 @@ result <- FindTopicsNumber(dtm,topics = seq(from = 2, to = 100, by = 1),
 result
 
 #write.csv(result,file="LDAtuning_result.csv")
-write.csv(result,file="LDAtuning_result_20210130_a1.5_G1k.csv")
+write.csv(result,file="LDAtuning_result_20210208_a1.5_G1k.csv")
 FindTopicsNumber_plot(result)
 
 
