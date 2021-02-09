@@ -42,6 +42,7 @@ m = LDA(dtm, method = "Gibbs", k = K,  control = list(alpha=alpha,
 ### Model Save
 
 m_n3340_k32_R07s <- m
+m <- m_n3340_k32_R07s
 # m <- m_n1321_k34_R03s
 
 

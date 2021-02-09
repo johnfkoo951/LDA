@@ -31,7 +31,7 @@ library(ldatuning)
 # dataset_original = read.csv('/Users/yhn_hac/Hanyang University/01-2. Study_Alone/R Data Analysis/LDA/Data/USETHIS_scopus_INT_n1321_20210108.csv', stringsAsFactors = FALSE)
 # Excel
 library(readxl)
-dataset_original <- read_excel("/Users/yhn_hac/Hanyang University/01-2. Study_Alone/R Data Analysis/LDA/Data/DB_WoS_20210208_R01.xlsx")
+dataset_original <- read_excel("/Users/yhn_hac/Hanyang University/01-2. Study_Alone/R Data Analysis/LDA/Data/DB_WoS_20210209_R03.xlsx")
 
 ### Select Data
 library(tm)
